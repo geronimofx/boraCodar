@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* conjuto de webkit para suavisar a cor da tag p */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #0F0D13;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app * {
+    /* border: 1px solid red; */
+}
+
+#app {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+    'A B'
+    'A C';
+
+    gap: 32px;
+
+    place-content: center;
+    height: 100vh;
+}
+/* Player 1 */
+#player-1 {
+    grid-area: A;
+    padding: 50px 38px;
+}
+
+#player-1 .wrapper {
+    width: 190px;
+}
+
+#player-1 img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
+
+#player-1 .info {
+    margin-top: 28px;
+}
+
+/* Player 2 */
+#player-2 {
+    grid-area: B;
+}
+
+/* Player 3 */
+#player-3 {
+    grid-area: C;
+}
+
+.player {
+    background-color: #2A2141;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+.info {
+    color: #E1E1E6;
+    display: grid;
+    gap: 9.6px;
+}
+
+.info h1 {
+    font-size: 24px;
+}
+
+.info p {
+    opacity: 0.67;
+    font-size: 19px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
