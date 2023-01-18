@@ -31,6 +31,7 @@ body * {
     place-content: center;
     height: 100vh;
 }
+
 /* Player 1 */
 #player-1 {
     grid-area: A;
@@ -52,14 +53,33 @@ body * {
     margin-top: 28px;
 }
 
+#player-1 .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
 /* Player 2 */
 #player-2 {
     grid-area: B;
+    height: fit-content;
+}
+
+#player-2 .controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
 }
 
 /* Player 3 */
 #player-3 {
     grid-area: C;
+}
+
+#player-3 .controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
 }
 
 .player {
@@ -68,14 +88,26 @@ body * {
     border-radius: 10px;
 }
 
+.player img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.info-wrapper {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
 .info {
     color: #E1E1E6;
-    display: grid;
-    gap: 9.6px;
 }
 
 .info h1 {
     font-size: 24px;
+    margin-bottom: 9.6px;
 }
 
 .info p {
@@ -83,11 +115,6 @@ body * {
     font-size: 19px;
 }
 
-.controls {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-}
 
 .track {
     margin-top: 28px;
@@ -121,4 +148,22 @@ body * {
     display: flex;
     justify-content: space-between;
     margin-top: 9.6px;
+}
+
+@media (max-width: 600px) {
+    #app {
+        display: flex;
+        flex-direction: column;
+        max-width: 260px;
+        margin: auto;
+        padding-block: 60px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+    
+    .info p {
+        font-size: 16px;
+    }
 }
