@@ -38,7 +38,7 @@ p {
 }
 
 .table-types {
-    width: 85%;
+    width:100%;
 }
 
 #table {
@@ -51,7 +51,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 12px;
+    padding: 12px 25px;
 
     font-size: 14px;
 
@@ -59,6 +59,10 @@ button {
 
     background: #8257E5;
     border-radius: 24px;
+}
+
+button img {
+    margin-right: 10px;
 }
 
 .first-column,
