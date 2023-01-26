@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 #app {
@@ -13,6 +14,11 @@
 
 #app h2 {
     font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -40,6 +46,16 @@
     background-color: #130F1E;
     color: #FFFFFF;
     height: 100vh;
+}
+
+tr > td,
+tr th {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+td {
+    font-size: 14px;
 }
 
 .info-test {
