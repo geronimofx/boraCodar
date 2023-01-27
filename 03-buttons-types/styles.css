@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+}
+
+#app h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Área contento os tipos de botões */
+.btn-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10% 0 10%;
+    width: 65%;
+    background-color: #0B0911;
+    color: #FFFFFF;
+}
+
+.info-types {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+}
+
+.table-types {
+    width:100%;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    border: solid #1C162C;
+    border-width: 0px 6px 7px 0px;
+    border-radius: 0px 0px 8px 0px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+    cursor: pointer;
+
+    font-size: 14px;
+    color: #FFFFFF;
+
+    height: 48px;
+
+    background: #8257E5;
+    border-radius: 24px;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+/* botão default */
+
+.default button:hover {
+    background-color: #9674E5;
+}
+
+#table .default>td:nth-child(3)> button {
+    background-color: #3C3748;
+    border: none;
+}
+
+#table .default>td:nth-child(3)> button:hover {
+    background-color: #6A617F;
+}
+
+#table .default>td:nth-child(4)> button {
+    background-color: #0B0911;
+    border: none;
+}
+
+/* botão hover */
+.hover button {
+    background-color: #9674E5;
+}
+
+#table .hover>td:nth-child(3)> button {
+    background-color: #6A617F;
+    border: none;
+} 
+
+#table .hover>td:nth-child(4)> button {
+    background-color: #0B0911;
+    border: none;
+}
+
+/*  botão focus */
+.focus button {
+    background-color: #8257E5;
+    border: solid 1px #FFFFFF;
+}
+
+.focus button:hover {
+    background-color: #9674E5;
+}
+
+#table .focus>td:nth-child(3)> button {
+    background-color: #3C3748;
+}
+
+#table .focus>td:nth-child(3)> button:hover {
+    background-color: #6A617F;
+}
+
+#table .focus>td:nth-child(4)> button {
+    background-color: #0B0911;
+}
+
+/* botão disable */
+.disabled button {
+    cursor: not-allowed;
+    background-color: #8257E5;
+    opacity: 0.56;
+}
+
+#table .disabled>td:nth-child(3)> button {
+    background-color: #3C3748;
+    border: none;
+}
+
+#table .disabled>td:nth-child(4)> button {
+    background-color: #0B0911;
+    border: none;
+}
+
+/* botão loading */
+.loading button {
+    cursor: wait;
+    background-color: #8257E5;
+}
+
+.loading button:hover {
+    background-color: #9674E5;
+}
+
+#table .loading>td:nth-child(3)> button {
+    background-color: #3C3748;
+    border: none;
+}
+
+#table .loading>td:nth-child(3)> button:hover {
+    background-color: #6A617F;
+}
+
+#table .loading>td:nth-child(4)> button {
+    background-color: #0B0911;
+    border: none;
+}
+
+/* botão movable */
+.movable button {
+    cursor: move;
+    background-color: #8257E5;
+}
+
+.movable button:hover {
+    background-color: #9674E5;
+}
+
+#table .movable>td:nth-child(3)> button {
+    background-color: #3C3748;
+    border: none;
+}
+
+#table .movable>td:nth-child(3)> button:hover {
+    background-color: #6A617F;
+}
+
+#table .movable>td:nth-child(4)> button {
+    background-color: #0B0911;
+    border: none;
+}
+
+.first-column,
+th {
+    background-color: #1C162C;
+    color: #FFFFFF;
+    padding: 30px 50px;
+}
+
+tr {
+    text-align: center;
+}
+
+tr > td,
+tr th {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+td {
+    font-size: 14px;
+    padding: 20px;
+}
+
+td img {
+    vertical-align: middle!important;;
+}
+
+#table tr>td:nth-child{
+    vertical-align: middle!important;
+    text-align: center;
+}
+
+#table tr>td:nth-child(n)>button{
+    margin: auto;
+}
+
+/* Área de teste dos botões */
+.btn-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+    width: 35%;
+    background-color: #130F1E;
+    color: #FFFFFF;
+    height: 100vh;
+    border: 25px solid #0B0911;
+}
+
+
+.info-test {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0 80px 0 85px;
+}
+
+.btn-interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-interact {
+    color: #FFFFFF;
+    border-radius: 24px;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 317px;
+    height: 48px;
+    border: none;
+    margin-bottom: 32px;
+}
+
+.interact-1 {
+    background-color: #8257E5;
+    cursor: pointer;
+}
+
+.interact-1:hover {
+    background-color: #9674E5;
+}
+
+.interact-2 {
+    background-color: #3C3748;
+    cursor: not-allowed;
+}
+
+.interact-3 {
+    background-color: #130F1E;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
